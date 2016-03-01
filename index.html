@@ -8,13 +8,12 @@
         <button id="button">button</button>
 
         <script type="text/javascript">
-            var TIME_OFFSET = 500;
+            var TIME_OFFSET = 300;
             var btn, st = null, n = 0;
             btn = document.querySelector('button');
            
             btn.addEventListener('click', function(){
                 n++;
-                console.log(n);
                 if( n === 1) {
                     st = window.setTimeout(function(){
                         someFn1();
@@ -27,7 +26,6 @@
                     n = 0;
                 }              
             });               
-                        
                         
             function someFn1(){
                 alert('Function executed on single click!');
